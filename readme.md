@@ -1,25 +1,36 @@
-# Save feed
+# Currencies Converter
 
 Scripting
 
-## Use
+## update connect.php with your DB data
 
-USERNAME_INSTAGRAM = String  
-CONTINUE = Bool
-
-```
-git clone
-cd save-feed
-npm install
-open app.js and replace REPLACE_RAPIDAPI_HOST & REPLACE_RAPIDAPI_KEY
-node app.js <USERNAME_INSTAGRAM> <Optional: CONTINUE>
-```
-
-## Sample result
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "currency";
 
 ```
-result_lilasikuta.json
+import currency.sql to your MySQL db
 ```
 
-capung GGWP  
+## Cronjobs
+
+
+If you'd like to get data automacally to your DB you can set up the cronjobs with this command:
+
+```
+0 17 * * *	cd /path/to/currencies; node usd.js > /dev/null; /usr/local/bin/php -f insert.php > /dev/null
+```
+
+In this case it will execute the job everyday at 5pm.
+
+## API's
+
+In this script I'm using an API service from rapidapi.com
+
+https://rapidapi.com/natkapral/api/currency-converter5
+
+It is free and very easy to use.
+
+Talles Amadeu  
 2022

@@ -22,7 +22,7 @@ function getCurr() {
     curr = from + "_" + to;
 
     var settings = {
-      "url": `https://free.currconv.com/api/v7/convert?q=${curr}&apiKey=609a7b48f3c11d3b982b`,
+      "url": `https://free.currconv.com/api/v7/convert?q=${curr}&apiKey=YOURAPI`,
       "method": "GET",
       "timeout": 0,
     };

@@ -4,9 +4,9 @@ var axios = require('axios');
 var config = {
   method: 'get',
   url: 'https://currency-converter5.p.rapidapi.com/currency/convert',
-  params: {format: 'json', from: 'USD', to: 'BRL', amount: '1'},
+  params: { format: 'json', from: 'USD', to: 'BRL', amount: '1' },
   headers: {
-    'X-RapidAPI-Key': '2c1f1fd5b0msh90e814d2f53ffdfp13ff59jsne91558ed4fc5',
+    'X-RapidAPI-Key': 'YOUR-API',
     'X-RapidAPI-Host': 'currency-converter5.p.rapidapi.com'
   }
 };
